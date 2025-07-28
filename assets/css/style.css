@@ -688,7 +688,7 @@ button {
      display: grid;
      grid-template-columns: 1fr 1fr 1fr 1fr;
      gap: 37px;
-     margin-left: -50px;
+     margin-left: -20px;
 }
 .staff__img {
      border-radius: inherit;
@@ -719,7 +719,7 @@ button {
      width: 19.3rem;
      height: 5.6rem;
      margin-top: 48px;
-     margin-left: 450px;
+     margin-left: 470px;
      background: #fff;
      color: #ff5b2e;
      text-align: center;
@@ -759,4 +759,198 @@ button {
      bottom: 0;
      z-index: 1;
      transform: translateX(-50%);
+}
+/* pricing */
+.pricing {
+     margin-top: 99px;
+}
+.heading__pricing {
+     color: #000958;
+     text-align: center;
+     font-family: Sora;
+     font-size: 5.2rem;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 6.2rem; /* 119.231% */
+}
+.desc__pricing {
+     width: 70.9rem;
+     color: #656689;
+     text-align: center;
+     margin-top: 24px;
+     margin-left: auto;
+     margin-right: auto;
+     justify-content: center;
+     font-family: Poppins;
+     font-size: 1.6rem;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 3rem; /* 187.5% */
+}
+.switch__pricing {
+     margin-top: 38px;
+     display: flex;
+     justify-content: center;
+}
+.pricing__switch-label {
+     position: relative;
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 27.6rem;
+     height: 5.6rem;
+     flex-shrink: 0;
+     border-radius: 3.1rem;
+     border: 1px solid #ff5b2e;
+     opacity: 0.6;
+     user-select: none;
+}
+.pricing__switch-label::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     z-index: -2;
+
+     width: 140px;
+     height: 100%;
+     background: #ff5b2e;
+     border-radius: inherit;
+}
+.value-1 {
+     display: flex;
+     margin-left: 40px;
+     color: #ff5b2e;
+     text-align: center;
+     font-family: Poppins;
+     font-size: 1.6rem;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 1.6rem; /* 100% */
+}
+.value-2 {
+     display: flex;
+     color: #fff;
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+     font-family: Poppins;
+     font-size: 1.6rem;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 1.6rem; /* 100% */
+     width: 13.1rem;
+     height: 5.6rem;
+     flex-shrink: 0;
+     border-radius: 3.1rem;
+}
+.pricing__switch-input:checked + .pricing__switch-label::before {
+     width: 131px;
+     left: auto;
+     right: 0;
+}
+
+.pricing__switch-input:checked + .pricing__switch-label .value-1 {
+     color: #ff5b2e;
+}
+.pricing__switch-input:not(:checked) + .pricing__switch-label .value-1 {
+     color: #fff;
+}
+.pricing__switch-input:not(:checked) + .pricing__switch-label .value-2 {
+     color: #ff5b2e;
+}
+.swtich__inner {
+     position: relative;
+}
+.img__switch {
+     position: absolute;
+     top: -24px;
+     right: 330px;
+}
+.pricing__pack {
+     margin-top: 56px;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     column-gap: 44px;
+     margin-left: 50px;
+}
+.pricing__card {
+     width: 30.2rem;
+     height: 46.5rem;
+     flex-shrink: 0;
+     border-radius: 2rem;
+     background: #fff;
+}
+.label__pack {
+     color: #ff5b2e;
+     display: block;
+     font-family: Poppins;
+     margin-left: 28px;
+     margin-top: 30px;
+     font-size: 1.2rem;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 1.2rem; /* 100% */
+}
+.card__tips {
+     color: #3f4065;
+     margin-left: 28px;
+     margin-bottom: 24px;
+     font-family: Sora;
+     margin-top: 8px;
+     font-size: 1.8rem;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 1.8rem; /* 100% */
+}
+.card__price {
+     color: #000958;
+     font-family: Sora;
+
+     margin-left: 28px;
+     font-size: 3.3rem;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 3.4rem; /* 103.03% */
+     color: #000958;
+     font-family: Sora;
+     font-size: 3.4rem;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 3.4rem;
+}
+.card__now {
+     width: 24.6rem;
+     margin-left: 28px;
+     cursor: pointer;
+     margin-top: 22px;
+     height: 4.4rem;
+     flex-shrink: 0;
+     border-radius: 3.9rem;
+     background: #ff5b2e;
+     border: none;
+     color: #fff;
+     text-align: center;
+     font-family: Poppins;
+     font-size: 1.6rem;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 1.6rem; /* 100% */
+}
+.desc__card {
+     color: #656689;
+     font-family: Poppins;
+     margin-bottom: 18px;
+     margin-left: 28px;
+     font-size: 1.4rem;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 1.4rem; /* 100% */
+}
+.desc__card:first-child {
+     margin-top: 22px;
+}
+.desc__card::before {
+     content: url(../img/Check-price.svg);
+     margin-right: 12px;
 }
