@@ -879,7 +879,9 @@ button {
      height: 46.5rem;
      flex-shrink: 0;
      border-radius: 2rem;
+     border-radius: 2rem;
      background: #fff;
+     box-shadow: 0 20px 44px 0 rgba(195, 108, 22, 0.06);
 }
 .label__pack {
      color: #ff5b2e;
@@ -953,4 +955,198 @@ button {
 .desc__card::before {
      content: url(../img/Check-price.svg);
      margin-right: 12px;
+}
+/* review */
+.review__content {
+     padding: 62px;
+
+     margin-left: -90px;
+     align-items: center;
+     justify-content: center;
+}
+/* .review__content--media{
+     display: flex;
+     
+} */
+
+.review__control {
+     cursor: pointer;
+     border: none;
+     background: transparent;
+     margin-top: 100px;
+}
+.review__control--left {
+     margin-right: 57px;
+}
+.review__control--right {
+     margin-left: 0;
+}
+.heading__review {
+     color: #000958;
+     font-family: Sora;
+     font-size: 5.2rem;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 6.2rem; /* 119.231% */
+}
+.desc__review {
+     color: #000;
+     font-family: Poppins;
+     margin-top: 24px;
+     width: 55.3rem;
+     font-size: 1.8rem;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 2.8rem; /* 155.556% */
+}
+.name__preview {
+     display: flex;
+     color: #282828;
+     font-family: Sora;
+     font-size: 1.8rem;
+     margin-top: 34px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 1.8rem; /* 100% */
+}
+.name__preview::before {
+     content: "";
+     width: 2rem;
+     height: 0.2rem;
+     background: #000;
+     margin-top: 8px;
+     margin-right: 8px;
+}
+.review__inner {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+}
+.review__items {
+     position: relative;
+     display: flex;
+     justify-content: space-between;
+}
+.review__infor {
+     margin-top: 160px;
+     margin-left: 127px;
+}
+.girl-anf-dog {
+     position: relative;
+
+     border-radius: 13.7rem;
+     background: transparent;
+     margin-top: 24px;
+     z-index: 1;
+}
+.img__review::after {
+     position: absolute;
+     content: "";
+     width: 27.4rem;
+     height: 35rem;
+     flex-shrink: 0;
+     border-radius: 13.7rem;
+     background: #ffda54;
+     inset: auto 0 0 0;
+}
+.review__dot {
+     margin-top: 50px;
+     margin-left: 470px;
+     cursor: pointer;
+}
+/* blog */
+.blog {
+     margin-top: 130px;
+}
+.blog__top {
+     align-items: center;
+     display: flex;
+     justify-content: space-between;
+}
+.heading__blog-top {
+     color: #000958;
+     font-family: Sora;
+     font-size: 5.2rem;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 6.2rem; /* 119.231% */
+}
+.desc__blog-top--right {
+     width: 35rem;
+     color: #656689;
+     font-family: Poppins;
+     font-size: 1.6rem;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 3rem; /* 187.5% */
+}
+.btn-blog {
+     width: 18.2rem;
+     height: 5.6rem;
+     background: transparent;
+     flex-shrink: 0;
+     margin-top: 24px;
+     border-radius: 3.1rem;
+     border: 1px solid #ff5b2e;
+     opacity: 0.6;
+     box-shadow: 0 13px 26px -8px rgba(255, 91, 46, 0.42);
+     color: #ff5b2e;
+     text-align: center;
+     font-family: Poppins;
+     font-size: 1.6rem;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 1.6rem; /* 100% */
+}
+.heading__blog-bottom {
+     width: 33.8rem;
+     color: #000958;
+     font-family: Sora;
+     margin-top: 28px;
+     font-size: 2.2rem;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 3.4rem; /* 154.545% */
+}
+.desc__blog-bottom {
+     color: #656689;
+     font-family: Poppins;
+     width: 35.1rem;
+     font-size: 1.4rem;
+     font-style: normal;
+     margin-top: 16px;
+     font-weight: 400;
+     line-height: 2.4rem; /* 171.429% */
+}
+.blog__bottom {
+     margin-top: 54px;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 48px;
+}
+.img__blog-inner {
+     display: flex;
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     background: url(<path-to-image>) lightgray -451.342px -744.74px / 256.735%
+          431.992% no-repeat;
+}
+.img__blog {
+     position: relative;
+     width: 35.8rem;
+     height: 36.2rem;
+     flex-shrink: 0;
+     border-radius: 2.4rem;
+     background: #90ccff;
+}
+.desc__blog-img {
+     position: relative;
+     color: #fff;
+     top: 24px;
+     left: 36px;
+     font-family: Sora;
+     font-size: 1.4rem;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 1.7rem; /* 121.429% */
 }
